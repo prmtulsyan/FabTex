@@ -1,0 +1,28 @@
+.product-carousel{
+    height: 300px;
+    width: 90%;
+    margin: 0 5%;
+}
+
+.carousel-inner{
+    height: 300px;
+}
+
+.carousel-caption {
+    position: absolute;
+    left: auto;
+    right: auto;
+    width: 35%;
+    height: 100%;
+    background-color: #ededed;
+    bottom:0;
+    right:0;
+}
+
+.item{
+    height: 100%;
+}
+
+.carousel-caption{
+    color: black;
+}

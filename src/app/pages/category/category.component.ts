@@ -27,9 +27,9 @@ export class CategoryComponent implements OnInit {
                 this.products = res;
             })
     };
-    addToCart = (product) => {
-        this.cartService.addToCart({product,quantity:1})
-    };
+    // addToCart = (product) => {
+    //     this.cartService.addToCart({product,quantity:1})
+    // };
     ngOnDestroy() {
         this.sub.unsubscribe();
     }

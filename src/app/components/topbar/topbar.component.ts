@@ -16,7 +16,9 @@ import {CartService} from "../../services/cart.service";
                 </button>
             </div>
             <div class="header-logo-wrapper">
-                <img class="header-logo-image" src="./assets/imgs/logo.png" alt="Hero">
+                <a routerLink = "/">
+                    <img class="header-logo-image" src="./assets/imgs/logo.png" alt="Hero">
+                </a>
             </div>
             <div class="header-nav-wrapper">
                 <ul class="header-nav">
@@ -24,25 +26,15 @@ import {CartService} from "../../services/cart.service";
                         <a routerLink="/">HOME</a>
                     </li>
                     <li class="header-nav-item">
-                        <a routerLink="/">SHOP<span class="fa fa-caret-down"></span></a>
+                        <a routerLink="/productlist">PRODUCTS</a>
                     </li>
                     <li class="header-nav-item">
-                        <a routerLink="/">JOURNAL</a>
-                    </li>
-                    <li class="header-nav-item">
-                        <a routerLink="/">MORE<span class="fa fa-caret-down"></span></a>
+                        <a routerLink="/">CONTACT</a>
                     </li>
                 </ul>
             </div>
             <div class="header-cart-wrapper">
-                <div class="header-cart" (click)="toggleCartPopup($event)">
-                    <div class="mobil-shopping-cart">
-                        <span><i class="fa fa-shopping-cart fa-2x"></i> <span *ngIf="cart_num">( {{cart_num}} )</span></span>
-                    </div>
-                    <div class="header-cart-item">
-                        <a href="">MY CART <span *ngIf="cart_num">( {{cart_num}} )</span><span class="fa fa-caret-down"></span></a>
-                    </div>
-                </div>
+                <!-- add social media icons -->
             </div>
         </div>
         <ul class="mobile-header-nav" *ngIf="collapse" (click)="collapse = !collapse">
@@ -50,13 +42,10 @@ import {CartService} from "../../services/cart.service";
                 <a routerLink="/">HOME</a>
             </li>
             <li>
-                <a routerLink="/">SHOP</a>
+                <a routerLink="/">PRODUCTS</a>
             </li>
             <li>
-                <a routerLink="/">JOURNAL</a>
-            </li>
-            <li>
-                <a routerLink="/">MORE</a>
+                <a routerLink="/">CONTACT US</a>
             </li>
         </ul>
         <cart-popup></cart-popup>

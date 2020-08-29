@@ -16,7 +16,7 @@ export const appRoutes=[
         loadChildren:'./pages/product/product.module#ProductModule'
     },
     {
-        path:'cart',
+        path:'productlist',
         loadChildren:'./pages/cart/cart-page.module#CartPageModule'
     },
     {

@@ -1,6 +1,6 @@
 .header-image {
     height: 400px;
-    background: url("../../../assets/imgs/plates-header.jpg") no-repeat;
+    /* background: url("../../../assets/imgs/plates-header.jpg") no-repeat; */
     background-size:cover;
     background-position: center center;
 }
